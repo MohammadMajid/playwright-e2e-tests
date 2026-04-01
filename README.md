@@ -122,7 +122,7 @@ This repository includes a CI workflow at [.github/workflows/playwright.yml](.gi
 
 After the next successful push to `main`/`master`, the report will be available at:
 
-`[https://<your-github-username>.github.io/<your-repo-name>/](https://mohammadmajid.github.io/playwright-e2e-tests/)`
+https://<your-github-username>.github.io/<your-repo-name>/](https://mohammadmajid.github.io/playwright-e2e-tests/
 
 ### If deployment fails with 404 Not Found
 
