@@ -123,3 +123,14 @@ This repository includes a CI workflow at [.github/workflows/playwright.yml](.gi
 After the next successful push to `main`/`master`, the report will be available at:
 
 `https://<your-github-username>.github.io/<your-repo-name>/`
+
+### If deployment fails with 404 Not Found
+
+If the workflow step Deploy to GitHub Pages fails with a 404, GitHub Pages is not enabled yet for the repository.
+
+1. Open Settings -> Pages in your repository.
+2. Set Build and deployment -> Source to GitHub Actions.
+3. Save and rerun the failed workflow.
+
+Direct link for this repo:
+https://github.com/MohammadMajid/playwright-e2e-tests/settings/pages
