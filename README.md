@@ -80,3 +80,46 @@ If tests execute successfully, you're all set!
 🎯 The target project structure is now set up. Let’s keep moving forward... 🚀
 
 ---
+
+# Allure Reporting
+
+This project is configured with both Playwright HTML reporting and Allure reporting.
+
+## Commands
+
+```sh
+npm run test
+```
+- Runs tests and writes Allure raw results to `allure-results/`.
+
+```sh
+npm run report:allure
+```
+- Generates the Allure HTML report in `allure-report/`.
+
+```sh
+npm run report:allure:open
+```
+- Opens the generated Allure report locally.
+
+```sh
+npm run test:allure
+```
+- Runs tests, then generates the Allure report.
+
+## Publish Allure on GitHub Pages
+
+This repository includes a CI workflow at [.github/workflows/playwright.yml](.github/workflows/playwright.yml) that:
+- runs Playwright tests,
+- generates `allure-report/`,
+- deploys the Allure HTML report to GitHub Pages on pushes to `main` or `master`.
+
+### One-time GitHub setup
+
+1. Open your repository in GitHub.
+2. Go to Settings -> Pages.
+3. Under Build and deployment, set Source to GitHub Actions.
+
+After the next successful push to `main`/`master`, the report will be available at:
+
+`https://<your-github-username>.github.io/<your-repo-name>/`
